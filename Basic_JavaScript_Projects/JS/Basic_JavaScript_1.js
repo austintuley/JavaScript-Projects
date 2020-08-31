@@ -33,3 +33,8 @@ document.write(D + ' ' + E + ' ' + F);
 document.write('<br>');
 
 document.write(3 + 3); // Entire line is a statement, (3+3) is an expression
+document.write('<br>');
+
+function My_Function() {
+	window.alert("You have pressed down a key. Let's hope this was not a trick!!!");
+}
