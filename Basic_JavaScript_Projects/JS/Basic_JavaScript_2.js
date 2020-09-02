@@ -11,3 +11,8 @@ function My_Second_Function() {
 	sentence += ' of my time learning JavaScript!'; // concatenating str to 1st variable
 	document.getElementById('concatenate').innerHTML = sentence; // implement JS via HTML onclick event
 }
+
+function My_Third_Function(x, y) {
+	add_result = x + y;
+	document.getElementById('addition').innerHTML = add_result;
+}
