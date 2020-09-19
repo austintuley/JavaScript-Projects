@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="./CSS/css_1.css">
+    <script src="./JavaScript/JavaScript_2.js"></script>
+
+</head>
+<body>
+
+    <h2>HTML Form</h2>
+
+    <div>
+        <form name="myForm" onsubmit="return validateForm()" method="POST" action="">
+            <label for="fName">First Name:</label>
+            <input id="fName" name="fName" type="text" placeholder="Joe">
+            <label for="lName">Last Name:</label>
+            <input id="lName" name="lName" type="text" placeholder="Strummer">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
