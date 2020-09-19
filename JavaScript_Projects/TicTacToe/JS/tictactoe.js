@@ -14,11 +14,11 @@ function placeXOrO(squareNumber) {
 		// This condition checks who's turn it is.
 		if (activePlayer === 'X') {
 			// If activePlayer is equal to 'X', the x.png is placed in HTML.
-			select.style.backgroundImage = 'url("Images/x.png")';
+			select.style.backgroundImage = 'url("Images/x2.png")';
 		} else {
 			// Active player may only be 'X' or 'O' so, if not 'X' it must be 'O'
 			// If activePlayer is equal to 'O', the o.png is placed in HTML.
-			select.style.backgroundImage = 'url("Images/o.png")';
+			select.style.backgroundImage = 'url("Images/o3.png")';
 		}
 		// squareNumber and activePlayer are concatenated together and added to array.
 		selectedSquares.push(squareNumber + activePlayer);
@@ -35,7 +35,7 @@ function placeXOrO(squareNumber) {
 		}
 
 		// This function plays placement sound.
-		Audio('./Media/place.mp3');
+		audio('./Media/stapleGun.mp3');
 		//This condition checks to see if it is computers turn.
 		if (activePlayer === 'O') {
 			// This function disables clicking for computer choice.
@@ -127,7 +127,7 @@ function checkWinConditions() {
 		// and 9 squares are selected, the code executes.
 	} else if (selectedSquares.length >= 9) {
 		// This function plays the tie game sound.
-		Audio('./Media/tie.mp3');
+		audio('./Media/tireSqueal.mp3');
 		// This function sets a .3 second timer before the resetGame is called.
 		setTimeout(function() {
 			resetGame();
@@ -142,7 +142,7 @@ function checkWinConditions() {
 		const c = selectedSquares.includes(squareC);
 		// If the 3 vaiables we pass are all included in our array true is
 		// returned and our else if condition executes the drawWinLine function.
-		if (a === true && b === true && C === true) {
+		if (a === true && b === true && c === true) {
 			return true;
 		}
 	}
@@ -246,7 +246,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
 	// This line disallows clicking while the win sound is playing.
 	disableClick();
 	// This line plays the win sound.
-	audio('./Media/winGame.mp3');
+	audio('./Media/deskBell.mp3');
 	// This line calls our main animation loop.
 	animateLineDrawing();
 	// This line waits 1 second.
