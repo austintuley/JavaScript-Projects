@@ -40,40 +40,34 @@
     <div id="gallery">
         <div>
             <h1>Gallery</h1>
-            <div class="flex-container">
+            <div class="row">
 
                 <!-- PHOTO CONTAINER 1 -->
-                <div class="photo-container">
-                    <div class="photo">
-                        <img src="./images/thumbnail_3.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Performing at The Speakeasy">
-                        <div class="photo-overlay">
-                            <h3>Click to Enlarge</h3>
-                            <p>TBD</p>
-                        </div>
+                <div class="column">
+                    <img src="./images/thumbnail_3.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Performing at The Speakeasy">
+                    <div class="photo-overlay">
+                        <h3>Click to Enlarge</h3>
+                        <p>TBD</p>
                     </div>
                 </div>
                 <!-- END PHOTO CONTAINER 1 -->
 
                 <!-- PHOTO CONTAINER 2 -->
-                <div class="photo-container">
-                    <div class="photo">
-                        <img src="./images/thumbnail_4.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="Playing a gig at Samples World Bistro">
-                        <div class="photo-overlay">
-                            <h3>Click to Enlarge</h3>
-                            <p>TBD</p>
-                        </div>
+                <div class="column">
+                    <img src="./images/thumbnail_4.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="Playing a gig at Samples World Bistro">
+                    <div class="photo-overlay">
+                        <h3>Click to Enlarge</h3>
+                        <p>TBD</p>
                     </div>
                 </div>
                 <!-- END PHOTO CONTAINER 2 -->
 
                 <!-- PHOTO CONTAINER 3 -->
-                <div class="photo-container">
-                    <div class="photo">
-                        <img src="./images/thumbnail_1.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="Finished setting up for a recording session">
-                        <div class="photo-overlay">
-                            <h3>Click to Enlarge</h3>
-                            <p>TBD</p>
-                        </div>
+                <div class="column">
+                    <img src="./images/thumbnail_1.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="Finished setting up for a recording session">
+                    <div class="photo-overlay">
+                        <h3>Click to Enlarge</h3>
+                        <p>TBD</p>
                     </div>
                 </div>
                 <!-- END PHOTO CONTAINER 3 -->
@@ -90,17 +84,17 @@
 
             <div class="mySlides">
                 <div class="numberText">1 / 3</div>
-                <img src="./images/thumbnail_3.jpg" style="width: 100%;" alt="">
+                <img src="./images/thumbnail_3.jpg" style="width: 100%;" alt="Speakeasy">
             </div>
 
             <div class="mySlides">
                 <div class="numberText">2 / 3</div>
-                <img src="./images/thumbnail_4.jpg" style="width: 100%;" alt="">
+                <img src="./images/thumbnail_4.jpg" style="width: 100%;" alt="Samples World Bistro">
             </div>
 
             <div class="mySlides">
                 <div class="numberText">3 / 3</div>
-                <img src="./images/thumbnail_1.jpg" style="width: 100%;" alt="">
+                <img src="./images/thumbnail_1.jpg" style="width: 100%;" alt="Recording Session">
             </div>
 
             <!-- NEXT/PREVIOUS CONTROLS-->
@@ -115,15 +109,15 @@
             <!-- END CAPTION TEXT-->
 
             <!-- THUMBNAIL IMAGE CONTROLS -->
-            <div class="photo">
+            <div class="column">
                 <img class="demo" src="./images/thumbnail_3.jpg" onclick="currentSlide(1)" alt="Performing at the Speakeasy">
             </div>
 
-            <div class="photo">
+            <div class="column">
                 <img class="demo" src="./images/thumbnail_4.jpg" onclick="currentSlide(2)" alt="Playing gig at Samples World Bistro">
             </div>
             
-            <div class="photo">
+            <div class="column">
                 <img class="demo" src="./images/thumbnail_1.jpg" onclick="currentSlide(3)" alt="Finished setting up for a recording session">
             </div>
             <!-- END THUMBNAIL IMAGE CONTROLS -->

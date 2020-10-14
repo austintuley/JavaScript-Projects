@@ -180,7 +180,7 @@ section {
 	font-size: 15px;
 }
 
-.flex-container {
+.row {
 	display: -webkit-flex;
 	display: flex;
 	flex-wrap: wrap;
@@ -344,7 +344,7 @@ section {
 	GALLERY ANIMATION
    ------------------- */
 
-.photo {
+.column {
 	position: relative;
 	line-height: 0;
 	margin-bottom: 2em;
@@ -356,14 +356,14 @@ section {
 	box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.7);
 }
 
-.photo-container {
+.column {
 	text-align: center;
 	margin: 15px auto;
 	width: 300px;
 	height: 169px;
 }
 
-.photo img {
+.column img {
 	max-width: 100%;
 	width: 300px;
 	height: 169px;
@@ -398,12 +398,12 @@ section {
 	opacity: 1;
 }
 
-.photo img {
+.column img {
 	transition: transform .5s;
 	transform-origin: 50% 50%;
 }
 
-.photo img:hover {
+.column img:hover {
 	transform: scale(1.1);
 }
 
@@ -411,18 +411,18 @@ section {
 	Beginning of Lightbox/Modal CSS 
    --------------------------------- */
 
-.photo-container > .photo {
+.row > .column {
 	padding: 8px;
 }
 
-.photo-container:after {
+.row:after {
 	content: "";
 	display: table;
 	clear: both;
 }
 
 /* Create equal columns next to each other */
-.photo {
+.column {
 	float: left;
 	width: 25%;
 }
