@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Ready State Change</title>
+</head>
+<body>
+
+    <div class="main">
+        <h1>Who will take game 4 of the National League World Series?</h1><br>
+    </div>
+
+    <div id="choice">
+        <input type="button" class="button" value="Click to see" id="dodgers" onclick="gameFour()">
+    </div>
+
+    <script type="text/javascript">
+
+        // Set up HTML request object
+    var team = new XMLHttpRequest();
+
+    // Prepare open AJAX request
+    team.open('GET', 'dodgers.html');
+
+    // Define AJAX response callback method
+    team.onreadystatechange = function() {
+        if (team.readyState == 4) {
+            document.getElementById('choice').innerHTML = team.responseText;
+        }
+    }
+
+    // Send AJAX request for data
+    function gameFour() {
+        team.send();
+        // Hide Button
+        document.getElementById('dodgers').style.display = 'none';
+    }
+
+    </script>
+    
+
+    
+</body>
+</html>
