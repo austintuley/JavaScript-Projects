@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events and Effects</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- This h1 tag will log the click to the Console within Dev Tools-->
+     <h1>Click Me to Log Event</h1>
+
+     <div id="click">Click here.</div>
+     <img id="sadie66" src="./images/SinceSadie66.JPG" alt="Checkered Mark Slippers and a Pit Bull" width="300" height="400">
+
+     <script>
+         <!-- Target the h1 element when it is clicked-->
+         $("h1").click(function() {
+             console.log("You have logged the click on the h1 element.")
+         });
+
+         <!-- Will hide/show the img based on current state-->
+         $("#click").click(function() {
+            $("#sadie66").slideToggle( "slow", function() {
+                //Slide Toggle Activated.
+            });
+         });
+     </script>
+    
+</body>
+</html>
