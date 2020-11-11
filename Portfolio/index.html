@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Austin Tuley</title>
+    <link rel="stylesheet" type="text/css" href="./Stylesheet/portfolio_styles.css">
+</head>
+
+<!-- Body -->
+<body class="Background">
+
+<!-- Navbar -->
+    <div class="Navbar">
+        <a class="active" href="#Home">Home</a>
+        <a href="#Slideshow">Slideshow</a>
+        <a href="#About">About</a>
+        <a href="#GitHub">Github</a>
+        <!-- Below makes so form opens on click and closes on double click -->
+        <a onclick="openForm()" ondblclick="closeForm()">Contact</a>
+    </div>
+
+<!-- Home -->
+    <div id="Home">
+        <br> <!-- Breaks added to create space between navbar and first heading -->
+        <br>
+
+<!-- Video -->
+        <video autoplay mute loop id="Typing_Video"> <!-- Video will play on look with no sound -->
+            <source src="./Stylesheet/Video/Typing.mp4" type="video/mp4">
+            Your browser does not support HTML5 video. <!-- Display message if video fails to run -->
+        </video>
+    </div>
+
+<!-- Video Text -->
+    <div class="Video_Text">
+        <h1 style="color: white;">Austin Tuley's Portfolio</h1>
+            <p>
+                <strong>
+                    <center>
+                        <q>In some ways, programming is like painting.
+                        <br>You start with a blank canvas and certain basic raw materials.
+                        <br>You use a combination of science, art, and craft to determine what to do with them.
+                        </q>
+                        <br>-Andrew Hunt<br>
+                        <br>
+                        My name is Austin Tuley. Welcome to my portfolio site. <br>
+                        On it, I will tell you about my background and experience.<br>
+                        <br>Thank you for stopping by and enjoy!
+                    </center>
+                </strong>
+            </p>
+    </div>
+
+<!-- Slideshow Section -->
+    <div id="Slideshow">
+        <div id="Slideshow_Background">
+            <div id="Slideshow_Container">
+
+                <div class="mySlides fade">
+                    <div class="Slide_Number">1 / 5</div>
+                        <img class="Slide_Show_Images" src="Stylesheet/Images/self_portrait.jpg" style="width: 100%;">
+                            <div class="text">I am available to assist you on your next project!</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="Slide_Number">\2 / 5</div>
+                        <img class="Slide_Show_Images" src="Stylesheet/Images/HTML_CSS_and_JavaScript.jpeg" style="width: 100%;">
+                            <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="Slide_Number">3 / 5</div>
+                        <img class="Slide_Show_Images" src="Stylesheet/Images/C_Sharp_and_Dot_NET.png" style="width: 100%;">
+                            <div class="text">>C#, .NET Framework, ASP.NET, MVC,</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="Slide_Number">4 / 5</div>
+                        <img class="Slide_Show_Images" src="Stylesheet/Images/SQL_and_Database.jpg" style="width: 100%;">
+                            <div class="text">back end development, databases and SQL.</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="Slide_Number">5 / 5</div>
+                        <img class="Slide_Show_Images" src="Stylesheet/Images/Coding_1.jpg" style="width: 100%;">
+                            <div class="text">
+                                <a onclick="openForm() " href="#Contact" style="color: white;">Contact me now!</a>
+                            </div>
+                </div>
+
+                <a class="Previous" onclick="plusSlides(-1)">&#10094</a>
+                <a class="Next" onclick="plusSlides(1)">&#10095</a>
+
+            </div>
+        </div>
+
+        <div style="text-align:center">
+ 
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+         </div>
+        
+    </div>
+
+<!-- About Section -->
+<div class="Row" id="About">
+    <div class="Column_2"> <!-- Left Column -->
+        <img src="./Stylesheet/Images/Development.jpg" alt="Laptop">
+    </div>
+
+    <div class="Column_1"> <!-- Right Column -->
+        <h1>About</h1>
+            <p>I am a software developer who loves to solve the next problem. I am a rescue pitbull father, multi-instrumentalist, and motorcycle enthusiast. <br><br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Software Developer Bootcamp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. <br><br>I am a full-stack developer and would love to work with you on your next project. <a href="#Contact">Contact</a> me below!</p>
+    </div>
+</div>
+
+<!-- Github Section -->
+    <div class="Row" id="GitHub">
+        <div class="Column_1"> <!-- Left Column -->
+            <h1>GitHub</h1>
+            <p>You can view my coding projects on my GitHub profile here:<br>
+            <center><a href="https://github.com/austintuley" target="_blank">Austin Tuley GitHub</a></center></p>
+        </div>
+
+        <div class="Column_2"> <!-- Right Column -->
+            <a href="https://github.com/austintuley" target="_blank"><img src="./Stylesheet/Images/GitHub.png" alt="GitHub"></a>
+        </div>
+    </div>
+
+<!-- Contact Section -->
+    <div id="Contact">
+        <button onclick="openForm()" class="Pop_Up_Button"> CONTACT </button>
+            <div class="form-popup" id="myForm">
+                <!-- Free form service, site must be live to use. -->
+                <form action="https://formspree.io/f/mbjpkjed" method="POST" class="form-container">
+                    <h1>Contact</h1>
+                        <label for="name"><b>Name</b></label>
+                            <input type="text" placeholder="Type your name here" name="name">
+                        <label for="phone"><b>Phone</b></label>
+                            <input type="text" placeholder="Enter your phone number here" name="phone">
+                        <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Type your email address here" name="email">
+                        <label for="message"><b>Message</b></label>
+                            <input type="text" placeholder="Type your message here" name="message">
+
+            <button type="submit" class="btn">SUBMIT</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                </form>
+            </div>
+    </div>
+
+<!-- Footer Section -->
+    <footer>
+        <p>
+            <center><a href="">Austin Tuley</a></center><br>
+        </p>
+    </footer>
+
+    <script src="./JS/portfolio_javaScipt.js"></script>
+
+</body>
+</html>
